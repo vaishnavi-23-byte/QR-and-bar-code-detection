@@ -1,1 +1,7 @@
 # QR-and-bar-code-detection
+This project aims to develop an image processing system capable of detecting and decoding QR codes and barcodes in various images using Python and OpenCV. The system processes a set of images, detects QR codes and barcodes, and extracts the encoded information or logs detection events with timestamps.
+The system consists of two primary components:
+QR Code Detection: Utilizing OpenCV's built-in QRCodeDetector, the system identifies and decodes QR codes from input images, draws bounding boxes around them, and displays the extracted data.
+Barcode Detection: Using a combination of Sobel edge detection, image thresholding, and morphological operations, the system identifies barcodes in the image. It draws bounding boxes around detected barcodes and logs the detection event.
+The program processes images from a folder, detecting QR codes and barcodes, displaying processed images with bounding boxes, and logging the corresponding data and timestamps to the console. The system also includes flags to ensure that each QR code and barcode is only detected once per image.
+The proposed solution is beneficial for applications in inventory management, logistics, and document scanning where QR codes and barcodes are prevalent. Future work can focus on enhancing detection accuracy under diverse conditions and integrating the system into real-time applications for industrial use cases.
